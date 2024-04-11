@@ -1,1 +1,1 @@
-mansikka is a wuggy games on Xbox one :clock1:
+mansikka is a wuggy games on Xbox one 🕐
