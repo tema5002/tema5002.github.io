@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>john lore</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <header>
+        <h1>john lore</h1>
+        <p>if you dont know what that is then you dont know what that is</p>
+        <p>i needed something to keep all of this easily accessible for me and my friends</p>
+        <button><a href="..">go back</a></button>
+        </header>
+        <div id="john"></div>
+        <script>
+const posts = [
+    { "username": "tema5002", "time": "2025-03-07T11:24:46.956Z", "src": "../static/john1.png", "text": "this is john he built the world biggest building" },
+    { "username": "tema5002", "time": "2025-03-07T13:08:18.661Z", "src": "../static/john2.png", "text": "john has invented a perpetual motion machine" },
+    { "username": "tema5002", "time": "2025-03-07T19:06:49.455Z", "src": "../static/john3.png", "text": "john has built the world smallest building" },
+    { "username": "tema5002", "time": "2025-03-08T07:59:11.416Z", "src": "../static/john4.png", "text": "john has built a square circle" },
+    { "username": "wahplus", "time": "2025-03-08T08:05:27.252Z", "src": "../static/john5.png", "text": "john has built a fiat 500" },
+    { "username": "tema5002", "time": "2025-03-08T13:40:38.730Z", "text": "john took a shit"},
+    { "username": "tema5002", "time": "2025-03-08T13:42:35.077Z", "src": "../static/john6.png", "text": "john built a bridge to nowhere" },
+    { "username": "tema5002", "time": "2025-03-08T13:47:35.530Z", "src": "../static/john7.png", "text": "i now have an original character" },
+    { "username": "tema5002", "time": "2025-03-08T13:55:16.031Z", "src": "../static/john8.png", "text": "john has built a house on a square circle" },
+    { "username": "dtpls", "time": "2025-03-08T14:03:28.465Z", "text": "john took another shit" },
+    { "username": "slinx92", "time": "2025-03-08T17:29:53.860Z", "text": "john took MY shit, thats right, he broke into MY house, then walked into MY bathroom, and then stole all of the shit from there" },
+    { "username": "tema5002", "time": "2025-03-08T17:30:37.460Z", "src": "../static/john9.png", "text": "john decided to swim on a chair" },
+    { "username": "wahplus", "time": "2025-03-09T05:57:00.854Z", "src": "../static/john10.png", "text": "john has built a b-52 stratofortress" },
+    { "username": "mari2", "time": "2025-03-09T05:58:45.220Z", "src": "../static/john11.png", "text": "john has built a john" },
+    { "username": "wahplus", "time": "2025-03-09T06:00:06.976Z", "src": "../static/john12.png", "text": "the 2 johns have built 2 more johns" },
+    { "username": "mari2", "time": "2025-03-09T06:00:36.430Z", "src": "../static/john13.png", "text": "oh fuck they're multiplying" },
+    { "username": "wahplus", "time": "2025-03-09T06:02:16.224Z", "src": "../static/john14.png", "text": "uhh ok guys how do we stop them" },
+    { "username": "mari2", "time": "2025-03-09T06:03:41.412Z", "src": "../static/john15.png", "text": "idk" },
+    { "username": "wahplus", "time": "2025-03-09T06:05:03.217Z", "src": "../static/john16.png", "text": "it doesnt look like theyre stopping anytime soon" },
+    { "username": "mari2", "time": "2025-03-09T06:10:50.154Z", "src": "../static/john17.png", "text": "john has just invented the john clone killer 9000" },
+    { "username": "mari2", "time": "2025-03-09T06:12:47.596Z", "src": "../static/john18.png", "text": "john has just invented loss" },
+    { "username": "tema5002", "time": "2025-03-09T10:20:42.386Z", "src": "../static/john19.png", "text": "john subscribed to yahiamice" },
+    { "username": "dtpls", "time": "2025-03-09T10:23:35.040Z", "src": "../static/john20.png", "text": "john invented napkins" },
+    { "username": "tema5002", "time": "2025-03-09T10:26:16.987Z", "src": "../static/john21.png", "text": "john went to krusty krab" },
+    { "username": "mari2", "time": "2025-03-09T21:37:30.831Z", "src": "../static/john22.png", "text": "john has just invented unimeter but sane" },
+    { "username": "tema5002", "time": "2025-03-10T12:29:00.393Z", "src": "../static/john23.png", "text": "john uninstalled windows 11 from his computer and made his own operating system johnlux" },
+    { "username": "mari2", "time": "2025-03-11T12:41:34.897Z", "src": "../static/john24.png", "text": "john has lamp is hostage in my basement btw tema5002 is asexual" },
+    { "username": "slinx92", "time": "2025-03-11T12:47:19.124Z", "src": "../static/johns new song!!!1.mp3", "text": "john just created this song!!<br>no this isnt just cascade slowed down idk what youre talking about" },
+    { "username": "tema5002", "time": "2025-03-11T12:55:53.977Z", "src": "../static/john25.png", "text": "john found oil on the world biggest building" },
+    { "username": "tema5002", "time": "2025-03-11T12:56:49.578Z", "src": "../static/john26.png", "text": "the us goverment took it away" },
+    { "username": "tema5002", "time": "2025-03-11T12:58:10.409Z", "src": "../static/john27.png", "text": "they paid him though wait what the fuck john what have you done" },
+    { "username": "tema5002", "time": "2025-03-11T12:59:15.333Z", "src": "../static/john26.png", "text": "john had to pay taxes for oil now he has no money" },
+    { "username": "tema5002", "time": "2025-03-11T13:02:29.745Z", "src": "../static/john28.png", "text": "john turned the world biggest building into the world biggest gun and now gonna rob the white house" },
+    { "username": "tema5002", "time": "2025-03-11T13:05:37.193Z", "src": "../static/john29.png", "text": "john got his oil back" },
+    { "username": "TheRedBlueCube2", "time": "2025-03-12T13:19:24.617Z", "src": "../static/john30.png", "text": "John John Cannon invented the John Cannon" },
+    { "username": "tema5002", "time": "2025-03-12T16:14:30.438Z", "src": "../static/john31.png", "text": "john opened a fridge" },
+    { "username": "tema5002", "time": "2025-03-13T12:23:29.190Z", "src": "../static/john32.png", "text": "there is no john take off your pants" },
+    { "username": "john", "time": "2025-03-13T15:36:31.559Z", "text": "hello fellow kids this is me the only and real john" },
+    { "username": "john", "time": "2025-03-13T15:50:16.733Z", "src": "../static/john33.png", "text": "john made a country and idfk how is it called systemd is still running" },
+    { "username": "tema5002", "time": "2025-03-14T18:33:57.120Z", "src": "../static/john34.png", "text": "john learnt how to breathe underwater and found a jellyfish" },
+    { "username": "tema5002", "time": "2025-03-14T20:08:39.709Z", "src": "../static/john35.png", "text": "john made unreal engine 7 on his computer" },
+    { "username": "mari2", "time": "2025-03-15T18:07:32.720Z", "src": "../static/john36.png", "text": "JOHN IS MISSING" },
+    { "username": "john", "time": "2025-03-15T18:22:20.886Z", "text": "hello chat<br>you know how i took a shit right<br>i finally wiped my ass<br>i am back" },
+    { "username": "BobMaster69", "time": "2025-03-15T21:13:23.156Z", "src": "../static/john37.png", "text": "OH NO JOHN IS LOCKED INSIDE PRISON!!!! WE NEED TO FIND A WAY TO BREAK HIM OUT!!" },
+    { "username": "tema5002", "time": "2025-03-16T07:47:35.162Z", "src": "../static/john38.png", "text": "john downloaded cheats on real life (trust me) to see what will happen if he explodes 100k tnt" },
+    { "username": "BobMaster69", "time": "2025-03-16T17:03:59.205Z", "src": "../static/john39.png", "text": "The cake recipe was a lie!!! Fortunately we got a key out of it and now john is free.. yay" },
+    { "username": "mari2", "time": "2025-03-24T12:11:49.834Z", "src": "../static/john40.png", "text": "John has just made a machine that turns fish into salmon" },
+    { "username": "mari2", "time": "2025-04-01T11:40:29.078Z", "text": "we appreciate your enthusiasm but unfortunately your mother is John" },
+    { "username": "john", "time": "2025-04-14T13:18:16.143Z", "src": "../static/john41.png", "text": "my name is john and i invented water" },
+    { "username": "mari2", "time": "2025-10-06T14:50:39.172Z", "text": "John's brother jnoh has invented the piss shower" },
+    { "username": "mari2", "time": "2025-10-06T15:02:24.413Z", "src": "../static/john42.png", "text": "john has returned and turned jnoh's piss shower into a fire shower" },
+    { "username": "mari2", "time": "2025-10-12T02:07:33.955Z", "src": "../static/john43.png", "text": "john has built an extremely hyper super mega max ultrawide monitor" },
+    { "username": "john", "time": "2026-01-07T09:31:02.126Z", "src": "../static/john44.png", "text": "my name is john and i invented lemonade this time<br>totally trust" },
+];
+
+const websites = {
+    "tema5002": "https://tema5002.github.io",
+    "wahplus": "https://sting.lt",
+    "dtpls": "https://dtplsongithub.github.io/aboutme/",
+    "slinx92": "https://slinx92.hs.vc/",
+    "mari2": "https://marii2.duckdns.org/" // MARI TWO?????????????
+};
+
+const john = document.getElementById("john");
+posts.forEach(post => {
+    const h2 = document.createElement("h2");
+    h2.innerHTML = post.text;
+    john.appendChild(h2);
+
+    if (post.src !== undefined) {
+        let src = undefined;
+        if (post.src.endsWith(".png")) {
+            src = document.createElement("img");
+            src.src = post.src;
+        }
+        if (post.src.endsWith(".mp3")) {
+            src = document.createElement("audio");
+            src.src = post.src
+            src.controls = true;
+        }
+        if (src !== undefined) john.appendChild(src);
+    }
+
+    const p = document.createElement("p");
+    const who = websites[post.username] === undefined ? post.username : `<a href="${websites[post.username]}">${post.username}</a>`;
+    p.innerHTML = `<note>posted by ${who} at ${new Date(post.time).toLocaleString()}</note>`;
+    john.appendChild(p);
+});
+        </script>
+    </body>
+</html>
+
+
