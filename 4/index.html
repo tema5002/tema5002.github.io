@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="darkreader" content="no-invert">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>4</title>
+        <link rel="stylesheet" href="../style.css">
+        <style>
+.tabs input[type="radio"] {
+    display: none;
+}
+
+.tab-buttons {
+    display: flex;
+}
+
+.tab-buttons label {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #444;
+}
+
+#tab1:checked ~ .tab-buttons label[for="tab1"],
+#tab2:checked ~ .tab-buttons label[for="tab2"],
+#tab3:checked ~ .tab-buttons label[for="tab3"],
+#tab4:checked ~ .tab-buttons label[for="tab4"],
+#tab5:checked ~ .tab-buttons label[for="tab5"],
+#tab6:checked ~ .tab-buttons label[for="tab6"] {
+    cursor: default;
+    background: #666;
+    border-bottom: 2px solid white;
+    font-weight: bold;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-buttons label:hover {
+    background: #555;
+}
+
+#tab1:checked ~ .tab-contents .tab1,
+#tab2:checked ~ .tab-contents .tab2,
+#tab3:checked ~ .tab-contents .tab3,
+#tab4:checked ~ .tab-contents .tab4,
+#tab5:checked ~ .tab-contents .tab5,
+#tab6:checked ~ .tab-contents .tab6 {
+    display: block;
+}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>4</h1>
+        </header>
+        <button><a href="..">go back</a></button>
+        <p>A bunch of numbers written using only the digit four that are either short or look cool.</p>
+        <p>I am not sure if all of this is correct but whatever.</p>
+        <div class="tabs">
+            <input type="radio" name="tabs" id="tab1" checked>
+            <input type="radio" name="tabs" id="tab2">
+            <input type="radio" name="tabs" id="tab3">
+            <input type="radio" name="tabs" id="tab4">
+            <input type="radio" name="tabs" id="tab5">
+            <input type="radio" name="tabs" id="tab6">
+            
+            <div class="tab-buttons">
+                <label for="tab1">1-9</label>
+                <label for="tab2">10-19</label>
+                <label for="tab3">20-29</label>
+                <label for="tab4">30-39</label>
+                <label for="tab5">40-49</label>
+                <label for="tab6">50</label>
+            </div>
+            
+            <div class="tab-contents">
+<div class="tab-pane tab1">
+    <img src="../static/4/1.svg"/>
+    <hr>
+    <img src="../static/4/2.svg"/>
+    <hr>
+    <img src="../static/4/3.svg"/>
+    <hr>
+    <img src="../static/4/4.svg"/>
+    <hr>
+    <img src="../static/4/5.svg"/>
+    <hr>
+    <img src="../static/4/6.svg"/>
+    <hr>
+    <img src="../static/4/7.svg"/>
+    <hr>
+    <img src="../static/4/8.svg"/>
+    <hr>
+    <img src="../static/4/9.svg"/>
+</div>
+<div class="tab-pane tab2">
+    <img src="../static/4/10.svg"/>
+    <hr>
+    <img src="../static/4/11.svg"/>
+    <hr>
+    <img src="../static/4/12.svg"/>
+    <hr>
+    <img src="../static/4/13.svg"/>
+    <hr>
+    <img src="../static/4/14.svg"/>
+    <hr>
+    <img src="../static/4/15.svg"/>
+    <hr>
+    <img src="../static/4/16.svg"/>
+    <hr>
+    <img src="../static/4/17.svg"/>
+    <hr>
+    <img src="../static/4/18.svg"/>
+    <hr>
+    <img src="../static/4/19.svg"/>
+</div>
+<div class="tab-pane tab3">
+    <img src="../static/4/20.svg"/>
+    <hr>
+    <img src="../static/4/21.svg"/>
+    <hr>
+    <img src="../static/4/22.svg"/>
+    <hr>
+    <img src="../static/4/23.svg"/>
+    <hr>
+    <img src="../static/4/24.svg"/>
+    <hr>
+    <img src="../static/4/25.svg"/>
+    <hr>
+    <img src="../static/4/26.svg"/>
+    <hr>
+    <img src="../static/4/27.svg"/>
+    <hr>
+    <img src="../static/4/28.svg"/>
+    <hr>
+    <img src="../static/4/29.svg"/>
+</div>
+<div class="tab-pane tab4">
+    <img src="../static/4/30.svg"/>
+    <hr>
+    <img src="../static/4/31.svg"/>
+    <hr>
+    <img src="../static/4/32.svg"/>
+    <hr>
+    <img src="../static/4/33.svg"/>
+    <hr>
+    <img src="../static/4/34.svg"/>
+    <hr>
+    <img src="../static/4/35.svg"/>
+    <hr>
+    <img src="../static/4/36.svg"/>
+    <hr>
+    <img src="../static/4/37.svg"/>
+    <hr>
+    <img src="../static/4/38.svg"/>
+    <hr>
+    <img src="../static/4/39.svg"/>
+</div>
+<div class="tab-pane tab5">
+    <img src="../static/4/40.svg"/>
+    <hr>
+    <img src="../static/4/41.svg"/>
+    <hr>
+    <img src="../static/4/42.svg"/>
+    <hr>
+    <img src="../static/4/43.svg"/>
+    <hr>
+    <img src="../static/4/44.svg"/>
+    <hr>
+    <img src="../static/4/45.svg"/>
+    <hr>
+    <img src="../static/4/46.svg"/>
+    <hr>
+    <img src="../static/4/47.svg"/>
+    <hr>
+    <img src="../static/4/48.svg"/>
+    <hr>
+    <img src="../static/4/49.svg"/>
+</div>
+<div class="tab-pane tab6">
+    <img src="../static/4/50.svg"/>
+    <p>It is 50</p>
+    <p>It really is</p>
+    <p>This will get renamed to 50-59 when there will be more numbers</p>
+</div>
+            </div>
+        </div>
+    </body>
+</html>
