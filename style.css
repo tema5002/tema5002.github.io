@@ -45,3 +45,13 @@ button:hover {
 a:link, a:visited {
     color: var(--link);
 }
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+.blink {
+    animation: 1s blink step-end infinite;
+    font-weight: bold;
+}
