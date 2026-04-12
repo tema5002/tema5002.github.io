@@ -1,10 +1,12 @@
 :root {
     --bg-dark: #191919;
-    --bg-darker: #000000;
+    --bg-darker: #000;
     --text: #e0e0e0;
     --button-bg: #ffffff18;
     --button-hover: #ffffff30;
     --link: #39f;
+    --button-hover-time: 1s;
+    --button-unhover-time: 2s;
 }
 
 html {
@@ -12,7 +14,26 @@ html {
     color: var(--text);
     margin: 0;
     min-height: 100%;
-    background: linear-gradient(to bottom, var(--bg-dark) 0%, var(--bg-darker) 70%, var(--bg-darker) 100%);
+    background: linear-gradient(to bottom, var(--bg-dark), var(--bg-darker) 70%, var(--bg-darker));
+    position: relative;
+}
+
+html::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(2px 2px at 20px 30px, #fff, transparent);
+    background-size: 40px 40px;
+    pointer-events: none;
+    opacity: 0.05;
+    transition: 0.5s;
+}
+
+html:hover::after {
+    opacity: 0.2;
 }
 
 button, input, select, textarea {
@@ -20,30 +41,46 @@ button, input, select, textarea {
 }
 
 a {
+    color: var(--link);
     text-decoration: none;
+}
+
+.abutton-group {
+    float: right;
+    margin-left: -10px;
+}
+
+.abutton {
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: var(--button-bg);
+    color: var(--link);
+    cursor: pointer;
+    transition: var(--button-unhover-time) ease-out 100ms;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.abutton:hover {
+    font-size: 400%;
+    background-color: var(--button-hover);
+    transition: font-size var(--button-hover-time) ease-out
 }
 
 header {
     padding: 10px;
+    overflow: auto;
 }
 
-button {
-    font-size: 20px;
-    float: right;
-    margin-left: 10px;
-    background-color: var(--button-bg);
-    color: var(--text);
-    border: none;
-    cursor: pointer;
-    padding: 5px;
+h1 {
+    transition: all 0.5s;
 }
 
-button:hover {
-    background-color: var(--button-hover);
-}
-
-a:link, a:visited {
-    color: var(--link);
+h1:hover {
+    text-shadow: -2px 0 var(--link),
+                  2px 0 var(--button-hover);
+    transform: skew(-2deg);
 }
 
 @keyframes blink {
